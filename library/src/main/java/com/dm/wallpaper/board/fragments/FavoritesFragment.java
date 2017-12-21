@@ -79,7 +79,7 @@ public class FavoritesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_favorites, container, false);
         ButterKnife.bind(this, view);
 
-        mInterstitialAd = new InterstitialAd(getActivity());
+      /*  mInterstitialAd = new InterstitialAd(getActivity());
         mInterstitialAd.setAdUnitId(getString(R.string.intersticial1));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
@@ -88,7 +88,7 @@ public class FavoritesFragment extends Fragment {
             public void onAdLoaded() {
                 displayInterstitial();
             }
-        });
+        }); */
 
         if (!Preferences.get(getActivity()).isShadowEnabled()) {
             View shadow = view.findViewById( R.id.shadow);
@@ -97,11 +97,11 @@ public class FavoritesFragment extends Fragment {
         return view;
     }
 
-    public void displayInterstitial() {
+   /* public void displayInterstitial() {
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         }
-    }
+    } */
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

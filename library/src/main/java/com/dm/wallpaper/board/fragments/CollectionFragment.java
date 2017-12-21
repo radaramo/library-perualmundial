@@ -98,7 +98,7 @@ public class CollectionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_collection, container, false);
         ButterKnife.bind(this, view);
-        mInterstitialAd = new InterstitialAd(getActivity());
+      /*  mInterstitialAd = new InterstitialAd(getActivity());
         mInterstitialAd.setAdUnitId(getString(R.string.intersticial1));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
@@ -107,7 +107,7 @@ public class CollectionFragment extends Fragment {
             public void onAdLoaded() {
                 displayInterstitial();
             }
-        });
+        }); */
         initViewPager();
         mTab.setupWithViewPager(mPager);
         mTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -141,11 +141,11 @@ public class CollectionFragment extends Fragment {
         return view;
     }
 
-    public void displayInterstitial() {
+  /*  public void displayInterstitial() {
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         }
-    }
+    } */
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
