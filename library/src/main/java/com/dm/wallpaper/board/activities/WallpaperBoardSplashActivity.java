@@ -54,7 +54,7 @@ public abstract class WallpaperBoardSplashActivity extends AppCompatActivity imp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-      //MobileAds.initialize(this, getString(R.string.idaplicacion));
+      MobileAds.initialize(this, getString(R.string.idaplicacion));
 
         mConfig = onInit();
         initBottomText();
