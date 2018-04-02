@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+
         <com.dm.wallpaper.board.utils.views.HeaderView
             android:id="@+id/image"
             android:layout_width="match_parent"
